@@ -165,12 +165,16 @@
             {
                 var positions = ctrack.getCurrentPosition();
                 var ratioList = new Array();
-                ratioList[0] = distance(positions[0], positions[14]) / distance(positions[1], positions[13]) ;
-                ratioList[1] = distance(positions[27], positions[32]) / distance(positions[33], positions[62]) ;
-                ratioList[2] = distance(positions[62], positions[5]) / distance(positions[62], positions[9]) ;
-                ratioList[3] = distance(positions[27], positions[62]) / distance(positions[32], positions[62]) ;
-                ratioList[4] = distance(positions[27], positions[36]) / distance(positions[32], positions[38]) ;
-                ratioList[5] = distance(positions[3], positions[11]) / distance(positions[35], positions[39]);
+				ratioList[0] = distance(positions[0], positions[14]) / distance(positions[1], positions[13]) ;
+				ratioList[1] = distance(positions[27], positions[32]) / distance(positions[33], positions[62]) ;
+				ratioList[2] = distance(positions[62], positions[5]) / distance(positions[62], positions[9]) ;
+				ratioList[3] = distance(positions[27], positions[62]) / distance(positions[32], positions[62]) ;
+				ratioList[4] = distance(positions[27], positions[36]) / distance(positions[32], positions[38]) ;
+				ratioList[5] = distance(positions[3], positions[11]) / distance(positions[35], positions[39]);
+				ratioList[6] = distance(positions[47], positions[53]) / distance(positions[60], positions[57]);
+				ratioList[7] = distance(positions[23], positions[28]) / distance(positions[25], positions[30]);
+				ratioList[8] = distance(positions[62], positions[36]) / distance(positions[62], positions[38]);
+				ratioList[9] = distance(positions[19], positions[27]) / distance(positions[15], positions[32]);
                 console.log(ratioList[0]);
                 localStorage.facedata = JSON.stringify(ratioList);
             }
